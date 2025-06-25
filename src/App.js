@@ -29,6 +29,7 @@ const App = () => {
         </button>
         <button className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-lg transition">
           {BUTTON2}
+          
         </button>
       </div>
     </div>
