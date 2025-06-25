@@ -10,23 +10,24 @@ const App = () => {
         <p className="text-base md:text-lg mb-10 text-amber-900">{WEBSITE_DESC}</p>
       </div>
 
-      {/* Multiple Images */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      {/* Responsive Image Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10 w-full max-w-6xl px-4">
         {WEBSITE_URLS.map((url, index) => (
           <img
             key={index}
             src={url}
-            alt={`Coffee shop ${index + 1}`}
+            alt={Coffee shop ${index + 1}}
             className="rounded-xl shadow-lg w-full object-cover h-64 md:h-72"
           />
         ))}
       </div>
 
-      <div className="flex justify-center gap-6">
-        <button className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-lg">
+      {/* Buttons */}
+      <div className="flex flex-wrap justify-center gap-6">
+        <button className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-lg transition">
           {BUTTON1}
         </button>
-        <button className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-lg">
+        <button className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-lg transition">
           {BUTTON2}
         </button>
       </div>
